@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+<body>
+<div class="container">
+  <h1>Registration form </h1>
+  <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+    
+    <table>
+     
+      <tr>
+        
+        <td><label for="name">Name<span style="color: rgb(255, 0, 0);">*</span>:</label></td>
+        <td><input type="text" name="name" id="name" placeholder="your name" required></td>
+      </tr>
+      <tr>
+        <td><label for="phoneNumber">Phone Number<span style="color: rgb(255, 0, 0);">*</span>:</label></td>
+        <td><input type="tel" name="phoneNumber" id="phoneNumber" maxlength="10" placeholder="1234-5678-901" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email<span style="color: rgb(255, 0, 0);">*</span>:</label></td>
+        <td><input type="email" name="email" id="email" placeholder="your email" required></td>
+      </tr>
+      <tr>
+      <td><label for="country">Country:</label></td>
+      <td><input type="text" name="country" id="country" placeholder="Your Country" required></td>
+    </tr>
+    <tr>
+        <td><label for="city">City:</label></td>
+        <td><input type="text" name="city" id="city" placeholder="Your City" required></td>
+      </tr>
+      <tr>
+        <td><label for="service">Service:</label></td>
+        <td><input type="text" name="service" id="service" placeholder="Service" required></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" class="submit" value="Send message"></td>
+      </tr>
+    </table>
+  </form>
+</div>
+<script  src="js.js"></script>
+</body>
+</html>
